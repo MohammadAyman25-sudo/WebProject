@@ -1,0 +1,55 @@
+select {
+    width: 70px;
+}
+
+body {
+    background: darkgray;
+}
+
+nav {
+    background-color: rgb(46, 43, 43);
+    padding: 20px;
+    text-align: center;
+    word-spacing: 3px;
+}
+
+a {
+    color: rgb(139, 136, 136);
+}
+
+#department {
+    padding: 10px;
+}
+
+#log_in {
+    padding: 10px;
+}
+
+#search {
+    padding: 10px;
+}
+
+#addStudent {
+    padding: 10px;
+}
+
+fieldset {
+    text-align: center;
+    background: floralwhite;
+}
+
+p {
+    font-size: 14px;
+}
+
+#but {
+    width: 65px;
+    background: red;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+div#Output {
+    font-size: 16px;
+}
