@@ -2,33 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Mohammad Ayman">
     <title>Search for students</title>
+    <script src="Search.js"></script>
+    <link rel="stylesheet" href="Search.css">
 </head>
-<body style="background: darkgray;">
-<nav style="background-color: rgb(46, 43, 43);padding: 20px;text-align: center;word-spacing: 3px;">
+<body>
+<nav>
 
-    <a style="color: rgb(139, 136, 136);" href="Home.html">Home</a>
+    <a href="Home.html" id="home">Home</a>
 
-    <a style="color: rgb(139, 136, 136);padding: 10px;"href="department_assignment.html">Department Assignment</a>
-    <a style="color: rgb(139, 136, 136);padding: 10px;"href="login_screen.html">Login Screen</a>
-    <a style="color: rgb(139, 136, 136);padding: 10px;"href="search.html">Search</a>
-    <a style="color: rgb(139, 136, 136);padding: 10px;"href="add_student.html">Add Student</a>
+    <a href="department_assignment.html" id="department">Department Assignment</a>
+    <a href="login_screen.html" id="log_in">Login Screen</a>
+    <a href="search.html" id="search">Search</a>
+    <a href="add_student.html" id="addStudent">Add Student</a>
 
 </nav>
-<div align="center" style="margin-top: 50px;margin-right: 250px;margin-left: 250px; border-style: solid; border-width: 1px; border-color: black; background: floralwhite;">
-    <p><strong>Search via:</strong><label>
-        <select style="width: 70px">
-            <option>NONE</option>
+<fieldset>
+    <div><strong>Search via:</strong><label>
+        <select id="Search_select" onchange="SearchVia()">
+            <option></option>
             <option>ID</option>
             <option>Name</option>
         </select>
-    </label></p>
-    <p><strong>Enter Name or ID:</strong><label>
-        <input type="text" size=30px>
-    </label></p>
-    <button type="submit" style="width: 65px; background: red; border-radius: 10px">
-        <p align="center"><strong>Search</strong></p>
+    </label></div>
+    <label>
+        <p><b id="para">Enter:</b>
+            <input type="search" size=30px id="ser" disabled></p>
+    </label>
+    <button type="submit" id="but"
+            disabled onclick="Search()">
+        <b>Search</b>
     </button>
-</div>
+    <hr>
+    <div id="Output">
+
+    </div>
+</fieldset>
 </body>
 </html>
